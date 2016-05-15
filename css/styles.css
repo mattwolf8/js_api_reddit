@@ -1,0 +1,269 @@
+body {
+  font-size: 16px;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  background: #e1e1e1;
+}
+
+
+
+
+/*          */
+/*  HEADER  */
+/*          */
+.infinite-header {
+  width: 100%;
+  background: #000000;
+  position: fixed;
+  top: 0;
+  padding: 0;
+}
+
+header {
+  max-width: 1600px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.logo{
+  width: 50px;
+  display: inline-block;
+  margin: 10px 0 0 0px;
+}
+.brand{
+  padding: 0;
+  margin: -8px 0;
+  color: white;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 1.1;
+  position: absolute;
+  top: 21px;
+  left: 70px;
+}
+
+nav {
+  box-sizing: border-box;
+  font-weight: 200;
+  padding: 0px 5px;
+  font-weight: 200;
+  text-align: center;
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+nav > span {
+  margin: 0 5px;
+  padding: 0px 5px;
+}
+
+
+
+/*          */
+/*   TYPE   */
+/*          */
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+/* Buttons */
+h3 {
+    border: 1px solid #ef662f;
+    color: #ef662f;
+    border-radius: 40px;
+    padding: 6px 25px;
+    text-transform: lowercase;
+    max-height: 40px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+/*             */
+/*   WRAPPER   */
+/*             */
+.infinite-border {
+  width: 100%;
+}
+
+#wrapper,#wrapper2,#wrapper3 {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 75px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+/*                */
+/*   DATA BOXES   */
+/*                */
+.post-holder {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 30px;
+  margin: 5px;
+  postion: relative;
+
+  text-align: center;
+  overflow: hidden;
+
+  background: #eeeeee;
+  border-radius: 10px;
+
+  border: 1px solid #dbe3e7;
+  box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
+
+  margin: 0 auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.post-holder > img {
+  margin: 0 auto;
+}
+
+.thumb-nail {
+  display: block;
+  height: 100px;
+  width: auto;
+  border: 2px solid #dbe3e7;
+  border-radius: 5px;
+
+}
+
+.post-holder > h4 {
+  font-size: 18px;
+  width: 100%;
+}
+
+
+/*             */
+/*   jQuery    */
+/*             */
+.full-size {
+  display: none;
+}
+.highlighted {
+  display: inline-block;
+}
+.not-highlighted {
+  display: none;
+}
+
+.punch_line {
+  display: none;
+}
+.audio_panel {
+
+}
+.audio_ctrl {
+  display: none;
+  width: 55px;
+  height: auto;
+  margin: 0 10px;
+  padding: 0 15px;
+}
+
+
+
+/*                    */
+/*   Media Queries    */
+/*                    */
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+  nav > span {
+    font-size: 12px;
+  }
+
+  nav > span:nth-of-type(1),
+  nav > span:nth-of-type(2),
+  nav > span:nth-of-type(3),
+  nav > span:nth-of-type(4){
+    margin: 0 15px;
+    padding: 2px 15px;
+  }
+}
+
+
+/* Small Devices, Phones */
+@media only screen and (min-width: 600px) {
+  .post-holder {
+    width: 48%;
+  }
+
+  .post-holder > h4 {
+    font-size: 18px;
+    min-height: 45px;
+    max-height: 45px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 763px) {
+  nav {
+    float: right;
+    margin-top: 13px;
+    font-size: 30px;
+}
+
+  /* Small Devices, Tablets */
+@media only screen and (min-width: 880px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .post-holder {
+    width: 30%;
+  }
+  nav > span {
+    font-size: 16px;
+  }
+}
+
+/* NAV BAR | Medium Devices, Desktops */
+@media only screen and (min-width: 1021px) {
+  nav > span {
+    font-size: 20px;
+  }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1130px) {
+  .post-holder {
+  width: 24%;
+  }
+
+  nav > span {
+    font-size: 23.5px;
+  }
+}
+
+@media only screen and (min-width: 1570px){
+  .brand {
+    color:white;
+    position: inherit;
+    display: inline-block;
+    font-size: 50px;
+    margin: 0px 0;
+  }
+}

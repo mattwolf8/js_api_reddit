@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+  <title>Our Site</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+
+<body>
+  <div class="infinite-header">
+    <header>
+      <img class="logo" src="img/logo.png">
+      <h1 class="brand">Reddit Redux</h1>
+
+      <nav>
+        <span id="r_pics_control">Pics</span>
+        <span id="r_jokes_control">Jokes <small>(nsfw)</small></span>
+        <span id="r_earth_control">earth</span>
+        <span id="view_all_control">All</span>
+      </nav>
+    </header>
+  </div>
+
+  <!-- API Content Populates Here -->
+  <div class='infinite-border'>
+    <div id="wrapper">
+    </div>
+  </div>
+
+  <!-- underscore -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+  <!-- jquery -->
+   <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+  <!-- text to speech -->
+  <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+
+  <!-- reddit API Call javascript -->
+  <script src="js/r_jokes.js"></script>
+  <script src="js/r_pics.js"></script>
+  <script src="js/r_earth.js"></script>
+
+  <!-- BTN Controller javascript -->
+  <script src="js/control_earth.js"></script>
+  <script src="js/control_jokes.js"></script>
+
+  <!-- NAVBAR UI Controller javascript -->
+  <script src="js/control_ui.js"></script>
+
+
+</body>
+</html>
